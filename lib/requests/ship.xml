@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ESHIPPER>
+
+    <LOGIN>
+        <COMPANY/>
+        <PASSWORD/>
+        <APPID>IN</APPID>
+        <APPVERSION>3.0</APPVERSION>
+    </LOGIN>
+
+    <CONSIGNMENTBATCH>
+        <SENDER>
+            <COMPANYNAME/>
+            <STREETADDRESS1/>
+            <STREETADDRESS2/>
+            <STREETADDRESS3/>
+            <CITY/>
+            <PROVINCE/>
+            <POSTCODE/>
+            <COUNTRY/>
+            <ACCOUNT/>
+            <VAT/>
+            <CONTACTNAME/>
+            <CONTACTDIALCODE/>
+            <CONTACTTELEPHONE/>
+            <CONTACTEMAIL/>
+
+            <COLLECTION>
+                <!-- <COLLECTIONADDRESS/> -->
+                <SHIPDATE/>
+                <PREFCOLLECTTIME>
+                    <FROM>15:00</FROM>
+                    <TO>16:00</TO>
+                </PREFCOLLECTTIME>
+                <ALTCOLLECTTIME>
+                    <FROM>16:15</FROM>
+                    <TO>17:15</TO>
+                </ALTCOLLECTTIME>
+                <COLLINSTRUCTIONS/>
+            </COLLECTION>
+
+        </SENDER>
+
+        <CONSIGNMENT>
+            <CONREF>c1</CONREF>
+            <DETAILS>
+                <RECEIVER>
+                    <COMPANYNAME/>
+                    <STREETADDRESS1/>
+                    <STREETADDRESS2/>
+                    <STREETADDRESS3/>
+                    <CITY/>
+                    <PROVINCE/>
+                    <POSTCODE/>
+                    <COUNTRY/>
+                    <VAT/>
+                    <CONTACTNAME/>
+                    <CONTACTDIALCODE/>
+                    <CONTACTTELEPHONE/>
+                    <CONTACTEMAIL/>
+                </RECEIVER>
+                <!-- <DELIVERY/> --> <!-- optional delivery address if different from receiver -->
+                <CUSTOMERREF/> <!-- order ref -->
+                <CONTYPE>N</CONTYPE> <!-- N = Non-document, D = Document -->
+                <PAYMENTIND>S</PAYMENTIND> <!-- S = Sender pays -->
+                <ITEMS/> <!-- number of boxes -->
+                <TOTALWEIGHT/> <!-- total weight in kg -->
+                <TOTALVOLUME/> <!-- total volume in m3 -->
+                <!-- <CURRENCY>GBP</CURRENCY> -->
+                <!-- <GOODSVALUE>180.00</GOODSVALUE> -->
+                <!-- <INSURANCEVALUE>150.00</INSURANCEVALUE> -->
+                <!-- <INSURANCECURRENCY>GBP</INSURANCECURRENCY> -->
+                <SERVICE/>
+                <OPTION/>
+                <DESCRIPTION/> <!-- description of goods in consignment -->
+                <DELIVERYINST/> <!-- optional delivery instructions for driver -->
+                <!-- <PACKAGE> -->
+                    <!-- <ITEMS>1</ITEMS> -->
+                    <!-- <DESCRIPTION>box 1</DESCRIPTION> -->
+                    <!-- <LENGTH/> m -->
+                    <!-- <HEIGHT/> m -->
+                    <!-- <WIDTH/> m -->
+                    <!-- <WEIGHT/> kg -->
+                    <!-- <ARTICLE>
+                        <ITEMS>1</ITEMS>
+                        <DESCRIPTION>Item Description</DESCRIPTION>
+                        <WEIGHT>1.03</WEIGHT>
+                        <INVOICEVALUE>2.30</INVOICEVALUE>
+                        <INVOICEDESC>Item Description</INVOICEDESC>
+                        <HTS>ABC</HTS>
+                        <COUNTRY>GB</COUNTRY>
+                    </ARTICLE> -->
+                <!-- </PACKAGE> -->
+            </DETAILS>
+        </CONSIGNMENT>
+
+    </CONSIGNMENTBATCH>
+
+    <ACTIVITY/>
+</ESHIPPER>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<priceRequest>
+    <appId>PC</appId>
+    <appVersion>3.0</appVersion>
+    <priceCheck>
+        <rateId>rate1</rateId>
+        <sender>
+            <country/>
+            <town/>
+            <postcode/>
+        </sender>
+        <delivery>
+            <country/>
+            <town/>
+            <postcode/>
+        </delivery>
+        <collectionDateTime/>
+        <product>
+            <!-- <id>1</id> -->
+            <type>N</type>
+            <!-- <options>
+                <option>
+                    <optionCode>CF</optionCode>
+                </option>
+            </options> -->
+        </product>
+        <!-- <insurance> <insuranceValue>0</insuranceValue> <goodsValue>0</goodsValue> </insurance> -->
+        <account> <accountNumber/> <accountCountry>GB</accountCountry> </account>
+        <termsOfPayment>S</termsOfPayment>
+        <currency>GBP</currency>
+        <priceBreakDown>false</priceBreakDown>
+        <consignmentDetails>
+            <totalWeight/>
+            <totalVolume/>
+            <totalNumberOfPieces/>
+        </consignmentDetails>
+        <!-- <pieceLine>
+            <numberOfPieces>2</numberOfPieces>
+            <pieceMeasurements>
+                <length>1</length>
+                <width>2.5</width>
+                <height>0.5</height>
+                <weight>1.25</weight>
+            </pieceMeasurements>
+            <pallet>true</pallet>
+        </pieceLine> -->
+    </priceCheck>
+</priceRequest>

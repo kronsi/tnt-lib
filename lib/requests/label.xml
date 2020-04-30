@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<labelRequest>
+    <consignment key="CON1">
+        <consignmentIdentity>
+            <consignmentNumber/>
+            <customerReference/>
+        </consignmentIdentity>
+        <collectionDateTime/>
+        <sender>
+            <name/>
+            <addressLine1/>
+            <addressLine2/>
+            <addressLine3/>
+            <town/>
+            <exactMatch/>
+            <province/>
+            <postcode/>
+            <country/>
+        </sender>
+        <delivery>
+            <name/>
+            <addressLine1/>
+            <addressLine2/>
+            <addressLine3/>
+            <town/>
+            <exactMatch/>
+            <province/>
+            <postcode/>
+            <country/>
+        </delivery>
+        <product>
+            <lineOfBusiness/>
+            <groupId>0</groupId>
+            <subGroupId>0</subGroupId>
+            <id/>
+            <type>N</type>
+            <!-- <option/> -->
+        </product>
+        <account>
+            <accountNumber/>
+            <accountCountry>GB</accountCountry>
+        </account>
+        <totalNumberOfPieces/>
+        <!-- <pieceLine>
+            <identifier>1</identifier>
+            <goodsDescription>piecelinegoods desc</goodsDescription>
+            <pieceMeasurements>
+                <length>1.11</length>
+                <width>1.11</width>
+                <height>1.11</height>
+                <weight>1.11</weight>
+            </pieceMeasurements>
+            <pieces>
+                <sequenceNumbers>1,2</sequenceNumbers>
+                <pieceReference>keyboard and mouse</pieceReference>
+            </pieces>
+            <pieces>
+                <sequenceNumbers>3</sequenceNumbers>
+                <pieceReference>computer tower</pieceReference>
+            </pieces>
+        </pieceLine> -->
+    </consignment>
+</labelRequest>
