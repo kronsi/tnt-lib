@@ -1,8 +1,13 @@
 # TNT Lib
 
+## Install
+
+`npm i @flamescape/tnt`
+
 ## Example Usage
 
 ```js
+const TNT = require('@flamescape/tnt');
 
 let tnt = new TNT({
     username: 'yourusername',
