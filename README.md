@@ -2,12 +2,12 @@
 
 ## Install
 
-`npm i @flamescape/tnt`
+`npm i @kronsi/tnt`
 
 ## Example Usage
 
 ```js
-const TNT = require('@flamescape/tnt');
+const TNT = require('@kronsi/tnt');
 
 let tnt = new TNT({
     username: 'yourusername',
@@ -64,22 +64,35 @@ consignment.setBoxes([
     }
 ])
 
-consignment.setCollectionDate('2020-05-01 16:00');
+consignment.setCollectionDate('2020-06-29 16:00');
 
-const services = await cons.queryAvailableServices();
+const start = async function() {
+    let labelXml = "";
+    if( mockXML.length == 0 ){
+        const services = await consignment.queryAvailableServices();
+        consignment.setService(services[services.length-2]);
+        console.log('Available Services:', services);
 
-console.log('Available Services:', services);
-cons.setService(services[0]);
+        const consignmentNum = await consignment.createConsignment();
+        console.log('TNT Consignment Number:', consignmentNum);
 
-const consignmentNum = await cons.createConsignment();
-console.log('TNT Consignment Number:', consignmentNum);
+        labelXml = await consignment.fetchLabelXml();
+        console.log('TNT labelXml:', labelXml);
+    }
+    else {
+        labelXml = mockXML;
+    }
+    
+    const labelHtml = await tnt.renderLabel(labelXml);
+    console.log("labelHtml", labelHtml);
+}
 
-const labelXml = await cons.fetchLabelXml();
+start();
 
-const labelPdf = await tnt.renderLabel(labelXml, {
-    width: "101mm",
-    height: "152mm"
-});
+## Credits
 
-await fs.outputFile('./label.pdf', labelPdf);
+Originally forked from [dotNETShipping](https://github.com/mikuso/tnt-lib).
+
+replaced libxslt by saxon-js cuz libxslt has no maintenance currently
+
 ```

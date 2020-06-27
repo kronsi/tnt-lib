@@ -25,10 +25,9 @@
             </options> -->
         </product>
         <!-- <insurance> <insuranceValue>0</insuranceValue> <goodsValue>0</goodsValue> </insurance> -->
-        <account> <accountNumber/> <accountCountry>GB</accountCountry> </account>
-        <termsOfPayment>S</termsOfPayment>
-        <currency>GBP</currency>
-        <priceBreakDown>false</priceBreakDown>
+        <account> <accountNumber/> <accountCountry>DE</accountCountry> </account>
+        <currency>EUR</currency>
+        <priceBreakDown>true</priceBreakDown>
         <consignmentDetails>
             <totalWeight/>
             <totalVolume/>
