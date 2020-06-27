@@ -93,7 +93,7 @@ start();
 
 ## Credits
 
-Originally forked from [dotNETShipping](https://github.com/mikuso/tnt-lib).
+Originally forked from [mikuso](https://github.com/mikuso/tnt-lib).
 
 replaced libxslt by saxon-js in case of maintanance 
 
