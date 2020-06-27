@@ -1,6 +1,6 @@
 {
     "name": "@kronsi/tnt",
-    "version": "0.0.16",
+    "version": "0.0.17",
     "description": "A library for using the TNT Express API",
     "main": "index.js",
     "dependencies": {
@@ -20,8 +20,8 @@
     "devDependencies": {},
     "scripts": {},
     "private": false,
-    "author": "Gareth Hughes <g_github@flamescape.com>, Sven Kronshage <sven@kronsi.com>",
-    "homepage": "https://github.com/mikuso/tnt-lib",
+    "author": "Sven Kronshage <sven@kronsi.com>, Gareth Hughes <g_github@flamescape.com>",
+    "homepage": "https://github.com/kronsi/tnt-lib",
     "keywords": [],
     "license": "ISC"
 }
