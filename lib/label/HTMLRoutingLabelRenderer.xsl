@@ -7,7 +7,7 @@
 
       <!--Logo-->
       <div id="logoIT">
-        <img src='label/logo_orig.jpg' alt='logo' id="tntLogo" />
+        <img src='https://express.tnt.com/expresswebservices-website/rendering/images/logo_orig.jpg' alt='logo' id="tntLogo" />
       </div>
 
       <!--Market & Transport Type-->
@@ -617,7 +617,7 @@
 
       <!--Logo-->
       <div id="logo">
-        <img src='label/logo_orig.jpg' alt='logo' id="tntLogo" />
+        <img src='https://express.tnt.com/expresswebservices-website/rendering/images/logo_orig.jpg' alt='logo' id="tntLogo" />
       </div>
 
       <!--Market & Transport Type-->
@@ -2728,7 +2728,7 @@
     <xsl:if test="$numberBrokenRules >0">
       <!--Logo -->
       <span id="errorLogo">
-          <img src='lib/tnt/label/logo_orig.jpg' alt='logo' id="tntLogo" />
+          <img src='https://express.tnt.com/expresswebservices-website/rendering/images/logo_orig.jpg' alt='logo' id="tntLogo" />
       </span>
       <span id="errorHeader">ExpressLabel Error(s)</span>
 
