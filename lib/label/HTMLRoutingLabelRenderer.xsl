@@ -345,7 +345,7 @@
 
       <!--Logo-->
       <div id="logoFR">
-        <img src='label/logo_orig.jpg' alt='logo' id="tntLogo" />
+        <img src='https://express.tnt.com/expresswebservices-website/rendering/images/logo_orig.jpg' alt='logo' id="tntLogo" />
       </div>
 
         <!--Contact Details-->
