@@ -6,7 +6,8 @@ let tnt = new TNT({
     username: 'username',
     password: 'password',
     accounts: {
-        DE: {number:'0000000', lineOfBusiness: 1}
+        DE: {number:'0000000', lineOfBusiness: 1},
+        ROW: {number:'0000000', lineOfBusiness: 2}
     }
 });
 
@@ -53,15 +54,17 @@ consignment.setCollectionDate('2020-06-30 16:00');
 
 const start = async function() {
     let labelXml = "";
-    if( mockXML.length == 0){
-        const services = await consignment.queryAvailableServices();
-        consignment.setService(services[services.length-2]);
-        console.log('Available Services:', services);
+    if( mockXML.length == 0 || 1){
+        //const services = await consignment.queryAvailableServices();
+        //console.log('Available Services:', services);
+        //consignment.setService(services[services.length-2]);
+        consignment.setService('12N');
+        
 
         //doShip == true -> shipment send live env
         //doShip == false -> shipment was not send dev env
-        const testing = !true;        
-        const consignmentNum = await consignment.createConsignment(testing);
+        const liveModus = false;        
+        const consignmentNum = await consignment.createConsignment(liveModus);
         console.log('TNT Consignment Number:', consignmentNum);
 
         labelXml = await consignment.fetchLabelXml();
