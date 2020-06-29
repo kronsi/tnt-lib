@@ -33,7 +33,7 @@ consignment.setDeliveryAddress({
     contact_name: "Recipient Name",
     address1: 'Recipient Street',
     city: 'Recipient City',
-    postcode: 'Recipient  Zip',
+    postcode: 'Recipient Zip',
     country: 'Recipient Country',
     contact_telephone: "Recipient Phone",
 });
@@ -49,16 +49,19 @@ consignment.setBoxes([
     }
 ])
 
-consignment.setCollectionDate('2020-06-29 16:00');
+consignment.setCollectionDate('2020-06-30 16:00');
 
 const start = async function() {
     let labelXml = "";
-    if( mockXML.length == 0 ){
+    if( mockXML.length == 0){
         const services = await consignment.queryAvailableServices();
         consignment.setService(services[services.length-2]);
         console.log('Available Services:', services);
 
-        const consignmentNum = await consignment.createConsignment();
+        //doShip == true -> shipment send live env
+        //doShip == false -> shipment was not send dev env
+        const testing = !true;        
+        const consignmentNum = await consignment.createConsignment(testing);
         console.log('TNT Consignment Number:', consignmentNum);
 
         labelXml = await consignment.fetchLabelXml();
@@ -69,7 +72,7 @@ const start = async function() {
     }
     
     const labelHtml = await tnt.renderLabel(labelXml);
-    console.log("labelHtml", labelHtml);
+    //console.log("labelHtml", labelHtml);
 }
 
 start();
