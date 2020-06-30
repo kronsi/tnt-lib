@@ -58,7 +58,7 @@ const start = async function() {
         //const services = await consignment.queryAvailableServices();
         //console.log('Available Services:', services);
         //consignment.setService(services[services.length-2]);
-        consignment.setService('12N');
+        consignment.setService('48N');
         
 
         //doShip == true -> shipment send live env
@@ -69,6 +69,9 @@ const start = async function() {
 
         labelXml = await consignment.fetchLabelXml();
         console.log('TNT labelXml:', labelXml);
+
+        const labelHtml = await tnt.renderLabel(labelXml);
+        console.log("labelHtml", labelHtml);
     }
     else {
         labelXml = mockXML;

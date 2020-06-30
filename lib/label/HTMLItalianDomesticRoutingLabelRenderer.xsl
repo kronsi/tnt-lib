@@ -237,7 +237,7 @@
   <!--Sort Details-->
   <div id="sortIT">
       <span id="sortDetailIT">
-        <xsl:value-of select="../consignmentLabelData/transitDepots/sortDepot/depotCode" />
+        <xsl:value-of select="../consignmentLabelData/transitDepots/transitDepot/depotCode" />
         <xsl:text> </xsl:text>
       </span>
   </div>
