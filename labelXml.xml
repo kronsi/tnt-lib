@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<labelResponse>
+    <consignment key="CON1">
+        <pieceLabelData>
+            <pieceNumber>1</pieceNumber>
+            <weightDisplay code="1.0" renderInstructions="yes">1.00kg</weightDisplay>
+            <pieceReference><![CDATA[1]]></pieceReference>
+            <barcode symbology="128C">420931341001104990847310</barcode>
+            <twoDBarcode symbology="pdf417"><![CDATA[420931341|420931341||1||SK Medialand|Detmolder Straße 68g|OERLINGHAUSEN|33813|DE||OM1 Media|Goethestr 23|ERFURT|99084|DE|100|EP12|N||||||||N|||Item 1|1|1.0|0.0010000000000000002|N|15 Jan 2021|15:00:00]]></twoDBarcode>
+        </pieceLabelData>
+        <consignmentLabelData>
+            <consignmentNumber>420931341</consignmentNumber>
+            <sender>
+                <name><![CDATA[SK Medialand]]></name>
+                <addressLine1><![CDATA[Detmolder Straße 68g]]></addressLine1>
+                <addressLine2><![CDATA[]]></addressLine2>
+                <town><![CDATA[OERLINGHAUSEN]]></town>
+                <province><![CDATA[]]></province>
+                <postcode><![CDATA[33813]]></postcode>
+                <country><![CDATA[DE]]></country>
+            </sender>
+            <delivery>
+                <name><![CDATA[OM1 Media]]></name>
+                <addressLine1><![CDATA[Goethestr 23]]></addressLine1>
+                <addressLine2><![CDATA[]]></addressLine2>
+                <town><![CDATA[ERFURT]]></town>
+                <province><![CDATA[]]></province>
+                <postcode><![CDATA[99084]]></postcode>
+                <country><![CDATA[DE]]></country>
+            </delivery>
+            <account>
+                <accountNumber>70702489</accountNumber>
+                <accountCountry>DE</accountCountry>
+            </account>
+            <totalNumberOfPieces>1</totalNumberOfPieces>
+            <product id="EP12">12:00 Express</product>
+            <collectionDate>2021-01-15</collectionDate>
+            <marketDisplay code="1" renderInstructions="yes"><![CDATA[DOM]]></marketDisplay>
+            <transportDisplay code="3" renderInstructions="yes"><![CDATA[ROAD]]></transportDisplay>
+            <freeCirculationDisplay code="" renderInstructions="highlighted"><![CDATA[C]]></freeCirculationDisplay>
+            <sortSplitText><![CDATA[1]]></sortSplitText>
+            <xrayDisplay code="" renderInstructions="no"/>
+            <originDepot>
+                <depotCode>BIE</depotCode>
+            </originDepot>
+            <transitDepots>
+                <transitDepot>
+                    <depotCode>HNJ</depotCode>
+                </transitDepot>
+            </transitDepots>
+            <destinationDepot>
+                <depotCode>EF3</depotCode>
+                <dueDayOfMonth>18</dueDayOfMonth>
+                <dueDate>2021-01-18</dueDate>
+            </destinationDepot>
+            <microzone code="" renderInstructions="no"/>
+            <clusterCode>5C</clusterCode>
+            <legalComments></legalComments>
+            <cashAmount code="0.0" renderInstructions="no"/>
+            <bulkShipment code="" renderInstructions="no"/>
+        </consignmentLabelData>
+    </consignment>
+</labelResponse>

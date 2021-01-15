@@ -1,0 +1,1791 @@
+
+<!DOCTYPE html
+ PUBLIC "-//W3C//DTD XHTML 1.0 Transistional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <style>
+#box {
+    page-break-after: always;
+    page-break-inside: avoid;
+    display: inline-block;
+	position: relative;
+    margin: 6px 10px;
+	top: 0;
+	left: 0;
+	border-collapse: collapse;
+	border-style: solid;
+	border-width: 1px;
+	text-align: center;
+	font-family: arial;
+	width: 330px;
+	height: 485px;
+}
+
+#logo {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+    width: 112px;
+    height: 61px;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: solid;
+    text-align: center;
+}
+
+#logo img {
+    text-align: center;
+    height: 56px;
+}
+
+#marketAndTransportType {
+    position: absolute;
+    top: 1px;
+    left: 116px;
+    width: 138px;
+    height: 28px;
+    background-color: #FFFFFF;
+    font-weight: plain;
+    font-size: 18px;
+    text-align: left;
+}
+
+#hazardous {
+    position: absolute;
+    top: 22px;
+    left: 116px;
+    width: 138px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+}
+
+#xray {
+    position: absolute;
+    top: 40px;
+    left: 116px;
+    width: 138px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+}
+
+#freeCirculationIndicator {
+    position: absolute;
+    top: 0px;
+    left: 254px;
+    width: 39px;
+    height: 61px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-color: black;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+}
+
+#sortSplitIndicator {
+    position: absolute;
+    top: 1px;
+    left: 294px;
+    width: 39px;
+    height: 60px;
+    border-color: black;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+}
+
+#conNumber {
+    position: absolute;
+    top: 61px;
+    left: 1px;
+    width: 162px;
+    height: 31px;
+    line-height: 60%;
+    padding-left: 3px;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: black;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #FFFFFF;
+    text-align: left;
+}
+
+#conNumberHeader {
+    font-size: 10px;
+}
+
+#conNumberDetail {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+#service {
+    position: absolute;
+    top: 61px;
+    left: 167px;
+    width: 163px;
+    height: 32px;
+    line-height: 70%;
+    background-color: #000000;
+    border-color: black;
+    border-top-width: 1px;
+    border-top-style: solid;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+#serviceHeader {
+    font-size: 10px;
+}
+
+#serviceDetail {
+    font-weight: bold;
+    line-height: 100%;
+}
+
+#option {
+    position: absolute;
+    top: 92px;
+    left: 167px;
+    width: 163px;
+    height: 31px;
+    line-height: 75%;
+    background-color: #000000;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: black;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+#optionHeader {
+    font-size: 10px;
+}
+
+#optionDetail {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100%;
+}
+
+#optionDetail {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 75%;
+}
+
+#piece {
+    position: absolute;
+    top: 93px;
+    left: 1px;
+    width: 83px;
+    height: 31px;
+    padding-left: 3px;
+    line-height: 75%;
+    background-color: #FFFFFF;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: black;
+    text-align: left;
+}
+
+#pieceHeader {
+    font-size: 10px;
+}
+
+#pieceDetail {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+#weight {
+    position: absolute;
+    top: 93px;
+    left: 87px;
+    width: 79px;
+    height: 31px;
+    line-height: 75%;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: black;
+    text-align: left;
+}
+
+#weightHeader {
+    font-size: 10px;
+}
+
+#weightDetail {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+#weightDetailHighlighted {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 100%;
+    background-color: black;
+    color: white;
+}
+
+#customerReference {
+    position: absolute;
+    top: 125px;
+    left: 1px;
+    width: 162px;
+    height: 24px;
+    padding-left: 3px;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-color: black;
+    text-align: left;
+}
+
+#customerReferenceHeader {
+    font-size: 9px;
+}
+
+#customerReferenceDetail {
+    font-size: 9px;
+    font-weight: bold;
+}
+
+#originDepot {
+    position: absolute;
+    top: 125px;
+    left: 168px;
+    width: 87px;
+    height: 32px;
+    padding-left: 3px;
+    text-align: left;
+}
+
+#originDepotHeader {
+    float:left;
+    font-size: 9px;
+}
+
+#originDepotDetail {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 0px;
+}
+
+#pickupDate {
+    position: absolute;
+    top: 124px;
+    left: 260px;
+    width: 70px;
+    height: 32px;
+    text-align: left;
+    line-height: 75%;
+}
+
+#pickupDateHeader {
+    font-size: 10px;
+}
+
+#pickupDateDetail {
+    font-size: 10px;
+}
+
+#accountNumber {
+    position: absolute;
+    top: 148px;
+    left: 1px;
+    width: 162px;
+    height: 18px;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: black;
+    border-bottom-style: none;
+    text-align: left;
+    padding-left: 3px;
+    font-size: 10px;
+}
+
+#accountNumberHeader {
+    font-size: 10px;
+}
+
+#accountNumberDetail {
+    padding-left: 3px;
+    font-size: 10px;
+}
+
+#originAddress {
+    position: absolute;
+    top: 161px;
+    left: 1px;
+    width: 162px;
+    height: 70px;
+    padding-left: 3px;
+    line-height: 70%;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-color: black;
+    text-align: left;
+}
+
+#originAddressHeader {
+    font-size: 9px;
+}
+
+#originAddressDetail {
+    font-size: 9px;
+    padding-left: 10px;
+}
+
+#deliveryAddress {
+    position: absolute;
+    top: 233px;
+    left: 1px;
+    width: 162px;
+    height: 70px;
+    padding-left: 3px;
+    line-height: 70%;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: black;
+    text-align: left;
+}
+
+#deliveryAddressHeader {
+    font-size: 9px;
+}
+
+#deliveryAddressDetail {
+    font-size: 9px;
+    padding-left: 10px;
+}
+
+#routing {
+    position: absolute;
+    top: 154px;
+    left: 168px;
+    width: 159px;
+    height: 122px;
+    padding-left: 3px;
+    line-height: 70%;
+    background-color: #FFFFFF;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-top-width: 1px;
+    border-top-style: dashed;
+    border-color: black;
+    text-align: left;
+}
+
+#routingHeader {
+	float:left;
+    font-size: 10px;
+}
+
+#routingDetail {
+    font-size: 32px;
+    font-weight: bold;
+    padding-left: 40px;
+    line-height: 90%;
+}
+
+#sort {
+    position: absolute;
+    top: 278px;
+    left: 167px;
+    width: 159px;
+    height: 32px;
+    padding-left: 3px;
+    background-color: #FFFFFF;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-color: black;
+    text-align: left;
+}
+
+#sortHeader {
+    float:left;
+    font-size: 10px;
+}
+
+#sortDetail {
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 8px;
+}
+
+#postcodeHeader {
+    position: absolute;
+    top: 312px;
+    left: 0px;
+    width: 60px;
+    height: 34px;
+    padding-left: 4px;
+    font-size: 9px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: black;
+    text-align: left;
+}
+
+#postcode {
+    position: absolute;
+    top: 304px;
+    left: 62px;
+    width: 104px;
+    height: 42px;
+    background-color: black;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: black;
+    text-align: left;
+}
+
+#postcodeDetail {
+    position: relative;
+    top: 6px;
+    left: 3px;
+    background-color: black;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+#clustercodeDetail {
+    position: relative;
+    top: 1px;
+    left: 7px;
+    background-color: black;
+    font-size: 34px;
+    font-weight: bold;
+    color: white;
+}
+
+#destinationDepot {
+}
+
+#destinationDepotHeader {
+    position: absolute;
+    top: 314px;
+    left: 167px;
+    width: 42px;
+    height: 31px;
+    padding-left: 3px;
+    border-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    text-align: left;
+    font-size: 10px;
+}
+
+#destinationDepotDetail {
+    position: absolute;
+    top: 309px;
+    left: 203px;
+    width: 128px;
+    height: 36px;
+    border-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    text-align: left;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#barcode {
+    position: absolute;
+    top: 348px;
+    left: 1px;
+    width: 327px;
+}
+
+#barcode img {
+    padding-top: 10px;
+    width: 326px;
+    height: 105px;
+}
+
+#barcodeLabel {
+    position: absolute;
+    top: 473px;
+    left: 1px;
+    width: 327px;
+    font-size: 9px;
+}
+
+#boxFR {
+	position: relative;
+	top: 9px;
+	left: 9px;
+	border-collapse: collapse;
+	border-style: solid;
+	border-width: 1px;
+	text-align: center;
+	font-family: arial;
+	width: 330px;
+	height: 485px;
+}
+
+#logoFR {
+	position: absolute;
+	top: 2px;
+	left: 1px;
+    width: 112px;
+    height: 60px;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: none;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#logoFR img {
+    text-align: center;
+    height: 35px;
+}
+
+#contactDetailsFR {
+    position: absolute;
+    top: 1px;
+    left: 114px;
+    width: 214px;
+    height: 40px;
+    background-color: #FFFFFF;
+    font-weight: normal;
+    text-align: left;
+}
+
+#contactDetailsTableFR tr td {
+    font-size: 10px;
+    line-height: 75%;
+}
+
+#legalCommentsFR {
+    position: absolute;
+    top: 40px;
+    left: 114px;
+    width: 214px;
+    height: 10px;
+    border-color: black;
+    font-weight: normal;
+    font-size: 7px;
+    text-align: left;
+    text-align: justify;
+}
+
+#conNumberFR {
+    position: absolute;
+    top: 53px;
+    left: 1px;
+    width: 162px;
+    height: 31px;
+    line-height: 60%;
+    padding-left: 3px;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: none;
+    border-right-color: black;
+    border-top-width: 1px;
+    border-top-style: none;
+    border-top-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: none;
+    border-bottom-color: #FFFFFF;
+    text-align: left;
+}
+
+#conNumberDetailFR {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 100%;
+}
+
+#serviceFR {
+    position: absolute;
+    top: 51px;
+    left: 167px;
+    width: 163px;
+    height: 24px;
+    line-height: 70%;
+    background-color: #000000;
+    border-color: black;
+    border-top-width: 1px;
+    border-top-style: solid;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+#serviceDetailFR {
+    font-weight: bold;
+    line-height: 100%;
+    padding-left:3px;
+}
+
+#optionFR {
+    position: absolute;
+    top: 78px;
+    left: 167px;
+    width: 163px;
+    height: 17px;
+    background-color: #000000;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: black;
+    text-align: left;
+    line-height: 90%;
+    color: #FFFFFF;
+}
+
+#optionDetailFR {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100%;
+    padding-left:3px;
+}
+
+#pieceFR {
+    position: absolute;
+    top: 79px;
+    left: 1px;
+    width: 83px;
+    height: 16px;
+    padding-left: 3px;
+    line-height: 75%;
+    background-color: #FFFFFF;
+    border-bottom-width: 1px;
+    border-bottom-style: none;
+    border-color: black;
+    text-align: left;
+}
+
+#pieceDetailFR {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+#weightFR {
+    position: absolute;
+    top: 79px;
+    left: 68px;
+    width: 83px;
+    height: 16px;
+    line-height: 110%;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: none;
+    border-right-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: none;
+    border-color: black;
+    text-align: right;
+}
+
+#weightDetailFR {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 110%;
+}
+
+#weightDetailHighlightedFR {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 110%;
+    background-color: black;
+    color: white;
+}
+
+#customerReferenceBarcodeFR {
+    position: absolute;
+    top: 99px;
+    left: 90px;
+    width: 230px;
+    height: 15px;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: none;
+    border-color: black;
+    text-align: left;
+}
+
+#customerReferenceFR {
+    position: absolute;
+    top: 115px;
+    left: 1px;
+    width: 162px;
+    height: 15px;
+    padding-left: 3px;
+    line-height: 70%;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: none;
+    border-color: black;
+    text-align: left;
+}
+
+#customerReferenceHeaderFR {
+    font-size: 10px;
+}
+
+#customerReferenceDetailFR {
+    font-size: 10px;
+    padding-left: 3px;
+}
+
+#accountNumberFR {
+    position: absolute;
+    top: 129px;
+    left: 1px;
+    width: 162px;
+    height: 15px;
+    padding-left: 3px;
+    line-height: 70%;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: none;
+    border-right-color: black;
+    border-bottom-style: none;
+    text-align: left;
+}
+
+#accountNumberHeaderFR {
+    font-size: 10px;
+}
+
+#accountNumberDetailFR {
+    padding-left: 3px;
+    font-size: 10px;
+}
+
+#deliveryDepotFR {
+    font-weight: bold;
+    position: absolute;
+    top: 135px;
+    left: 198px;
+    background-color: #FFFFFF;
+    text-align: left;
+    font-size: 64px;
+}
+
+#originAddressLabelFR {
+    position: absolute;
+    top: 147px;
+    left: 1px;
+    padding-left: 3px;
+    line-height: 90%;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: none;
+    border-bottom-width: 1px;
+    border-bottom-style: none;
+    border-top-style: none;
+    border-top-width: 1px;
+    border-color: black;
+    text-align: left;
+    font-size: 9px;
+}
+
+#originAddressFR {
+    position: absolute;
+    top: 145px;
+    left: 30px;
+    width: 162px;
+    height: 55px;
+    padding-left: 3px;
+    line-height: 70%;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: none;
+    border-bottom-width: 1px;
+    border-bottom-style: none;
+    border-top-style: none;
+    border-top-width: 1px;
+    border-color: black;
+    text-align: left;
+}
+
+#originAddressHeaderFR {
+	font-size: 8px;
+}
+
+#originAddressDetailFR {
+    font-size: 8px;
+}
+
+#deliveryAddressLabelFR {
+    position: absolute;
+    top: 204px;
+    left: 1px;
+    padding-left: 3px;
+    line-height: 90%;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: none;
+    border-bottom-width: 1px;
+    border-bottom-style: none;
+    border-color: black;
+    text-align: left;
+    font-size: 9px;
+}
+
+#deliveryAddressFR {
+    position: absolute;
+    top: 199px;
+    left: 30px;
+    width: 290px;
+    height: 105px;
+    padding-left: 3px;
+    line-height: 100%;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: none;
+    border-bottom-width: 1px;
+    border-bottom-style: none;
+    border-color: black;
+    text-align: left;
+}
+
+#deliveryAddressHeaderFR {
+    font-size: 9px;
+}
+
+#deliveryAddressDetailFR {
+    font-size: 15px;
+}
+
+#specialInstructionsFR {
+    position: absolute;
+    top: 277px;
+    left: 1px;
+    width: 325px;
+    height: 10px;
+    padding-left: 3px;
+    line-height: 100%;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: none;
+    border-bottom-width: 1px;
+    border-bottom-style: none;
+    border-color: black;
+    text-align: left;
+    font-size: 10px;
+}
+
+#contactNameFR {
+    position: absolute;
+    top: 289px;
+    left: 1px;
+    width: 162px;
+    height: 18px;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: none;
+    border-right-color: black;
+    border-bottom-style: none;
+    text-align: left;
+    padding-left: 3px;
+    font-size: 10px;
+}
+
+#contactNameHeaderFR {
+    font-size: 10px;
+}
+
+#contactNameDetailFR {
+    padding-left: 3px;
+    font-size: 10px;
+}
+
+#contactPhoneFR {
+    position: absolute;
+    top: 301px;
+    left: 1px;
+    width: 162px;
+    height: 18px;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: none;
+    border-right-color: black;
+    border-bottom-style: none;
+    text-align: left;
+    padding-left: 3px;
+    font-size: 10px;
+}
+
+#contactPhoneHeaderFR {
+    font-size: 10px;
+}
+
+#contactPhoneDetailFR {
+    padding-left: 3px;
+    font-size: 10px;
+}
+
+#postcodeHeaderFR {
+    position: absolute;
+    top: 319px;
+    left: 1px;
+    width: 65px;
+    padding-left: 3px;
+    font-size: 9px;
+    border-bottom-width: 1px;
+    border-bottom-style: none;
+    border-color: black;
+    text-align: left;
+}
+
+#postcodeFR {
+    position: absolute;
+    top: 315px;
+    left: 68px;
+    width: 96px;
+    height: 29px;
+    background-color: black;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: none;
+    border-color: black;
+    text-align: left;
+}
+
+#postcodeDetailFR {
+    position: relative;
+    left: 3px;
+    background-color: black;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+}
+
+#clustercodeDetailFR {
+    position: relative;
+    top: 0px;
+    left: 7px;
+    background-color: black;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+}
+
+#pickupDateFR {
+    position: absolute;
+    top: 307px;
+    left: 170px;
+    width: 157px;
+    text-align: left;
+}
+
+#pickupDateHeaderFR {
+    font-size: 9px;
+}
+
+#pickupDateDetailFR {
+    font-size: 9px;
+}
+
+#cashAmountFR {
+    position: absolute;
+    top: 325px;
+    left: 170px;
+    width: 157px;
+    text-align: left;
+    font-size: 16px;
+}
+
+
+#barcodeFR {
+    position: absolute;
+    top: 348px;
+    left: 1px;
+    width: 327px;
+}
+
+#barcodeFR img {
+    padding-top: 10px;
+    width: 280px;
+    height: 105px;
+}
+
+#barcodeLabelFR {
+    position: absolute;
+    top: 473px;
+    left: 1px;
+    width: 327px;
+    font-size: 9px;
+}
+
+#boxIT {
+    position: relative;
+    top: 9px;
+    left: 9px;
+    border-collapse: collapse;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    font-family: arial;
+    width: 330px;
+    height: 485px;
+}
+
+#logoIT {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 112px;
+    height: 61px;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: solid;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#logoIT img {
+    text-align: center;
+    height: 35px;
+}
+
+#marketAndTransportTypeIT {
+    position: absolute;
+    top: 1px;
+    left: 116px;
+    width: 138px;
+    height: 28px;
+    background-color: #FFFFFF;
+    font-weight: plain;
+    font-size: 18px;
+    text-align: left;
+}
+
+#hazardousIT {
+    position: absolute;
+    top: 22px;
+    left: 116px;
+    width: 138px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+}
+
+#xrayIT {
+    position: absolute;
+    top: 40px;
+    left: 116px;
+    width: 138px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+}
+
+#freeCirculationIndicatorIT {
+    position: absolute;
+    top: 0px;
+    left: 254px;
+    width: 39px;
+    height: 61px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-color: black;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+}
+
+#sortSplitIndicatorIT {
+    position: absolute;
+    top: 1px;
+    left: 294px;
+    width: 39px;
+    height: 60px;
+    border-color: black;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+}
+
+#conNumberIT {
+    position: absolute;
+    top: 61px;
+    left: 1px;
+    width: 162px;
+    height: 31px;
+    line-height: 60%;
+    padding-left: 3px;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: black;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #FFFFFF;
+    text-align: left;
+}
+
+#conNumberHeaderIT {
+    font-size: 10px;
+}
+
+#conNumberDetailIT {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+#serviceIT {
+    position: absolute;
+    top: 61px;
+    left: 167px;
+    width: 163px;
+    height: 32px;
+    line-height: 70%;
+    background-color: #000000;
+    border-color: black;
+    border-top-width: 1px;
+    border-top-style: solid;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+#serviceHeaderIT {
+    font-size: 10px;
+}
+
+#serviceDetailIT {
+    font-weight: bold;
+    line-height: 100%;
+}
+
+#optionIT {
+    position: absolute;
+    top: 92px;
+    left: 167px;
+    width: 163px;
+    height: 31px;
+    line-height: 75%;
+    background-color: #000000;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: black;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+#optionHeaderIT {
+    font-size: 10px;
+}
+
+#optionDetailIT {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100%;
+}
+
+#optionDetailIT {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 75%;
+}
+
+#pieceIT {
+    position: absolute;
+    top: 93px;
+    left: 1px;
+    width: 83px;
+    height: 31px;
+    padding-left: 3px;
+    line-height: 75%;
+    background-color: #FFFFFF;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: black;
+    text-align: left;
+}
+
+#pieceHeaderIT {
+    font-size: 10px;
+}
+
+#pieceDetailIT {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+#weightIT {
+    position: absolute;
+    top: 93px;
+    left: 87px;
+    width: 79px;
+    height: 31px;
+    line-height: 75%;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: black;
+    text-align: left;
+}
+
+#weightHeaderIT {
+    font-size: 10px;
+}
+
+#weightDetailIT {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+#weightDetailHighlightedIT {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 100%;
+    background-color: black;
+    color: white;
+}
+
+#contactInfoIT {
+    position: absolute;
+    top: 125px;
+    left: 1px;
+    width: 162px;
+    height: 24px;
+    padding-left: 3px;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-color: black;
+    text-align: left;
+    line-height: 65%;
+}
+
+#contactInfoHeaderIT {
+    font-size: 9px;
+}
+
+#contactInfoDetailIT {
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 3px;
+}
+
+#referenceIT {
+    position: absolute;
+    top: 139px;
+    left: 1px;
+    width: 162px;
+    height: 18px;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: black;
+    border-bottom-style: none;
+    text-align: left;
+    padding-left: 3px;
+    line-height: 65%;
+}
+
+#referenceHeaderIT {
+    font-size: 9px;
+}
+
+#referenceDetailIT {
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 3px;
+}
+
+#accountNumberIT {
+    position: absolute;
+    top: 151px;
+    left: 1px;
+    width: 162px;
+    height: 9px;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    text-align: left;
+    padding-left: 3px;
+    padding-bottom: 5px;
+    font-size: 10px;
+}
+
+#accountNumberHeaderIT {
+    font-size: 9px;
+}
+
+#accountNumberDetailIT {
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 3px;
+}
+
+#originDepotIT {
+    position: absolute;
+    top: 123px;
+    left: 168px;
+    width: 88px;
+    height: 34px;
+    padding-left: 3px;
+    text-align: left;
+    line-height: 90%;
+}
+
+#originDepotHeaderIT {
+    float:left;
+    font-size: 9px;
+}
+
+#originDepotDetailIT {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+    position: relative;
+    top: -1px;
+}
+
+#pickupDateIT {
+    position: absolute;
+    top: 122px;
+    left: 260px;
+    width: 75px;
+    height: 32px;
+    text-align: left;
+    line-height: 75%;
+}
+
+#pickupDateHeaderIT {
+    font-size: 10px;
+}
+
+#pickupDateDetailIT {
+    font-size: 10px;
+}
+
+#originAddressIT {
+    position: absolute;
+    top: 166px;
+    left: 1px;
+    width: 162px;
+    height: 66px;
+    padding-left: 3px;
+    line-height: 65%;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-color: black;
+    text-align: left;
+}
+
+#originAddressHeaderIT {
+    font-size: 9px;
+}
+
+#originAddressDetailIT {
+    font-size: 9px;
+    padding-left: 10px;
+}
+
+#deliveryAddressIT {
+    position: absolute;
+    top: 233px;
+    left: 1px;
+    width: 162px;
+    height: 70px;
+    padding-left: 3px;
+    line-height: 70%;
+    background-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: black;
+    text-align: left;
+}
+
+#deliveryAddressHeaderIT {
+    font-size: 9px;
+}
+
+#deliveryAddressDetailIT {
+    font-size: 9px;
+    padding-left: 10px;
+}
+
+#routingIT {
+    position: absolute;
+    top: 154px;
+    left: 168px;
+    width: 159px;
+    height: 125px;
+    padding-left: 3px;
+    padding-top: 1px;
+    line-height: 55%;
+    background-color: #FFFFFF;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-top-width: 1px;
+    border-top-style: dashed;
+    border-color: black;
+    text-align: left;
+}
+
+#routingHeaderIT {
+    float:left;
+    font-size: 10px;
+}
+
+#routingDetailIT {
+    font-size: 32px;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-top: 0px;
+    line-height: 90%;
+    float: left;
+}
+
+#sortIT {
+    position: absolute;
+    top: 282px;
+    left: 167px;
+    width: 159px;
+    height: 29px;
+    padding-left: 3px;
+    background-color: #FFFFFF;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-color: black;
+    text-align: left;
+}
+
+#sortHeaderIT {
+    float:left;
+    font-size: 10px;
+}
+
+#sortDetailIT {
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 15px;
+    line-height: 100%;
+}
+
+#microzonaHeaderIT {
+    position: absolute;
+    top: 315px;
+    left: 0px;
+    width: 60px;
+    height: 30px;
+    padding-left: 4px;
+    font-size: 9px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: black;
+    text-align: left;
+}
+
+#microzonaIT {
+    position: absolute;
+    top: 304px;
+    left: 48px;
+    width: 79px;
+    height: 41px;
+    background-color: black;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: black;
+    text-align: center;
+}
+
+#microzonaDetailIT {
+    position: relative;
+    top: 6px;
+    background-color: black;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+#bulkShipmentHeaderIT {
+    position: absolute;
+    top: 304px;
+    left: 123px;
+    width: 11px;
+    height: 41px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: black;
+}
+
+#bulkShipmentIT {
+    position: absolute;
+    top: 304px;
+    left: 133px;
+    width: 33px;
+    height: 41px;
+    background-color: black;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: black;
+    text-align: center;
+}
+
+#bulkShipmentDetailIT {
+    position: relative;
+    top: 3px;
+    background-color: black;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+#destinationDepotHeaderIT {
+    position: absolute;
+    top: 315px;
+    left: 167px;
+    width: 42px;
+    height: 30px;
+    padding-left: 3px;
+    border-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    text-align: left;
+    font-size: 10px;
+}
+
+#destinationDepotDetailIT {
+    position: absolute;
+    top: 312px;
+    left: 203px;
+    width: 128px;
+    height: 33px;
+    border-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    text-align: left;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+#barcodeIT {
+    position: absolute;
+    top: 348px;
+    left: 1px;
+    width: 327px;
+}
+
+#barcodeIT img {
+    padding-top: 10px;
+    width: 326px;
+    height: 105px;
+}
+
+#barcodeLabelIT {
+    position: absolute;
+    top: 473px;
+    left: 1px;
+    width: 327px;
+    font-size: 9px;
+}
+
+#errorLogo {
+	background-color: #FFFFFF;
+	text-align: center;
+	padding: 2px;
+	float: left;
+	width: 125px;
+	height: 65px;
+}
+
+#errorLogo img {
+	text-align: center;
+	float: left;
+	height: 65px;
+}
+
+#errorBox {
+	border-collapse: collapse;
+	border-style: none;
+	width: 384px;
+	page-break-after: always;
+}
+
+#errorHeader {
+	padding: 2px;
+	font-weight: bold;
+	font-size: 23px;
+	text-align: left;
+	height: 45px;
+}
+
+#errorCode {
+	border-width: 1px;
+	border-style: solid;
+	border-top-style: none;
+	border-collapse: collapse;
+	width: 385px;
+	height: 20px;
+	float: left;
+}
+
+#errorCodeHeader {
+	float: left;
+	font-size: 17px;
+	font-weight: bold;
+	text-align: left;
+	border-right-width: 1px;
+	border-right-style: solid;
+	padding-left: 4px;
+	width: 125px;
+}
+
+#errorCodeDetail {
+	font-weight: normal;
+	font-size: 17px;
+	text-align: left;
+	padding-left: 4px;
+}
+
+#errorConNumber {
+	border-width: 1px;
+	border-style: solid;
+	border-collapse: collapse;
+	width: 385px;
+	height: 20px;
+	float: left;
+}
+
+#errorConNumberHeader {
+	float: left;
+	font-size: 17px;
+	font-weight: bold;
+	text-align: left;
+	border-right-width: 1px;
+	border-right-style: solid;
+	padding-left: 4px;
+	width: 125px;
+}
+
+#errorConNumberDetail {
+	font-weight: normal;
+	font-size: 17px;
+	text-align: left;
+	padding-left: 4px;
+}
+
+#errorDescription {
+	border-collapse: collapse;
+	border-width: 1px;
+	border-style: solid;
+	border-top-style: none;
+	width: 385px;
+	height: auto;
+	margin-bottom: 5px;
+	float: left;
+}
+
+#errorDescriptionDetail {
+	float: left;
+	font-weight: normal;
+	font-size: 17px;
+	text-align: left;
+	padding-left: 4px;
+}
+</style>
+      <title>TNT Label</title>
+   </head>
+   <body>
+      <div xmlns="" id="box">
+         <div id="logo"><img src="https://express.tnt.com/expresswebservices-website/rendering/images/logo_orig.jpg" alt="logo" id="tntLogo"></div>
+         <div id="marketAndTransportType">DOM/ROAD</div>
+         <div id="hazardous"></div>
+         <div id="freeCirculationIndicator" style="background-color: #000000;color: #FFFFFF;">C</div>
+         <div id="sortSplitIndicator">1</div>
+         <div id="conNumber">
+            <div id="conNumberHeader">Con No.</div>
+            <div id="conNumberDetail">420931341</div>
+         </div>
+         <div id="service">
+            <div id="serviceHeader">Service</div><span id="serviceDetail" style="font-size: 20px;">12:00 Express</span></div>
+         <div id="piece"><span id="pieceHeader">
+            Piece
+            <br></span><span id="pieceDetail">1 of 1</span></div>
+         <div id="weight"><span id="weightHeader">
+            Weight
+            <br></span><span id="weightDetail">1.00kg</span> </div>
+         <div id="option"><span id="optionHeader">Option</span><br><span id="optionDetail"> </span></div>
+         <div id="customerReference">
+            <div id="customerReferenceHeader">Customer Reference</div>
+            <div id="customerReferenceDetail">1</div>
+         </div>
+         <div id="accountNumber"><span id="accountNumberHeader">S/R Account No</span><span id="accountNumberDetail">70702489</span></div>
+         <div id="originDepot"><span id="originDepotHeader">Origin</span><span id="originDepotDetail">BIE</span></div>
+         <div id="pickupDate"><span id="pickupDateHeader">Pickup Date</span><br><span id="pickupDateDetail">15 Jan 2021</span></div>
+         <div id="originAddress"><span id="originAddressHeader">Sender Address</span><br><div id="originAddressDetail">SK Medialand<br>Detmolder Straße 68g<br><br>OERLINGHAUSEN  33813<br>DE</div>
+         </div>
+         <div id="deliveryAddress" style="clear:left"><span id="deliveryAddressHeader">Delivery Address</span><br><div id="deliveryAddressDetail">OM1 Media<br>Goethestr 23<br><br>ERFURT  99084<br>DE</div>
+         </div>
+         <div id="routing"><span id="routingHeader">Routing</span><div id="routingDetail">HNJ<br></div>
+         </div>
+         <div id="sort"><span id="sortHeader">Sort</span><span id="sortDetail">HNJ </span></div>
+         <div id="postcodeHeader">Postcode /
+          <br>
+          Cluster Code
+      </div>
+         <div id="postcode"><span id="clustercodeDetail">5C</span></div>
+         <div id="destinationDepotHeader">
+          Dest
+          <br>
+          Depot
+      </div>
+         <div id="destinationDepotDetail">EF3-18</div>
+         <div id="barcode" name="barcode"><img src="https://express.tnt.com/barbecue/barcode?type=Code128C&amp;height=140&amp;width=2&amp;data=420931341001104990847310"></div>
+         <div id="barcodeLabel">420931341001104990847310</div>
+      </div><br xmlns="" style="page-break-before:always"></body>
+</html>
