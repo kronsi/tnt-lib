@@ -1,1 +1,5 @@
 node_modules/
+./test.js
+labelHtml.html
+labelXml.xml
+.DS_Store

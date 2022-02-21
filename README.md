@@ -1,5 +1,7 @@
 # TNT Lib
 
+library to track, rate or ship something via TNT Express
+
 ## Install
 
 `npm i @kronsi/tnt`
