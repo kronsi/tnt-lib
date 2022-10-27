@@ -14,6 +14,7 @@ const TNT = require('@kronsi/tnt');
 let tnt = new TNT({
     username: 'yourusername',
     password: 'yourpassword',
+    debug: false,
     accounts: {
         GB: {number:'0000000000', lineOfBusiness: 1},
         ROW: {number: '000000000', lineOfBusiness: 2}
