@@ -26,7 +26,7 @@
             <CONTACTEMAIL/>
 
             <COLLECTION>
-                <!-- <COLLECTIONADDRESS/> -->
+                <COLLECTIONADDRESS/>
                 <SHIPDATE/>
                 <PREFCOLLECTTIME>
                     <FROM>15:00</FROM>
