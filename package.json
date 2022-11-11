@@ -6,7 +6,7 @@
     "dependencies": {
         "bluebird": "^3.7.2",
         "fs-extra": "^9.0.0",
-        "html-pdf": "^2.2.0",
+        "html-pdf": "^3.0.1",
         "moment": "^2.24.0",
         "request": "^2.88.2",
         "saxon-js": "^2.0.2",
